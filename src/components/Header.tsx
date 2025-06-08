@@ -170,7 +170,7 @@ const Header: FC = () => {
     <HeaderContainer>
       <HeaderContent>
         <Logo>
-          <img src="/Color logo - no background (2).svg" alt="DÖRING Consulting Logo" />
+          <img src="/images/color_logo_no_background_2.svg" alt="DÖRING Consulting Logo" />
           <LogoText>DÖRING Consulting</LogoText>
         </Logo>
         
@@ -217,7 +217,7 @@ const Header: FC = () => {
       <MobileMenu isOpen={isMobileMenuOpen}>
         <MobileMenuHeader>
           <Logo>
-            <img src="/Color logo - no background (2).svg" alt="DÖRING Consulting Logo" />
+            <img src="/images/color_logo_no_background_2.svg" alt="DÖRING Consulting Logo" />
             <LogoText>DÖRING Consulting</LogoText>
           </Logo>
           <MobileMenuCloseButton onClick={closeMobileMenu}>
