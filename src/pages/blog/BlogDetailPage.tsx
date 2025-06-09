@@ -151,7 +151,7 @@ const BlogDetailPage: React.FC = () => {
       category: 'Einkauf',
       date: '15. Mai 2025',
       author: 'Alexander Döring',
-      image: '/images/procurement.jpg'
+      image: './images/procurement.jpg'
     },
     {
       id: 2,
@@ -159,7 +159,7 @@ const BlogDetailPage: React.FC = () => {
       category: 'Supply Chain',
       date: '28. April 2025',
       author: 'Alexander Döring',
-      image: '/images/supply_chain.jpg'
+      image: './images/supply_chain.jpg'
     },
     {
       id: 3,
@@ -167,7 +167,7 @@ const BlogDetailPage: React.FC = () => {
       category: 'Digitalisierung',
       date: '10. April 2025',
       author: 'Alexander Döring',
-      image: '/images/consulting_meeting.jpg'
+      image: './images/consulting_meeting.jpg'
     },
     {
       id: 4,
@@ -175,7 +175,7 @@ const BlogDetailPage: React.FC = () => {
       category: 'Nachhaltigkeit',
       date: '2. April 2025',
       author: 'Alexander Döring',
-      image: '/images/procurement.jpg'
+      image: './images/procurement.jpg'
     },
     {
       id: 5,
@@ -183,7 +183,7 @@ const BlogDetailPage: React.FC = () => {
       category: 'Sourcing',
       date: '18. März 2025',
       author: 'Alexander Döring',
-      image: '/images/supply_chain.jpg'
+      image: './images/supply_chain.jpg'
     },
     {
       id: 6,
@@ -191,7 +191,7 @@ const BlogDetailPage: React.FC = () => {
       category: 'Interim Management',
       date: '5. März 2025',
       author: 'Alexander Döring',
-      image: '/images/interim_executive.jpg'
+      image: './images/interim_executive.jpg'
     }
   ];
   

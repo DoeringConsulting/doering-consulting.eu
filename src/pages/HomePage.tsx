@@ -13,7 +13,7 @@ const HeroSection = styled.section`
   background-color: ${props => props.theme.colors.primary};
   color: ${props => props.theme.colors.white};
   overflow: hidden;
-  background-image: url('/images/consulting_meeting.jpg');
+  background-image: url('./images/consulting_meeting.jpg');
   background-size: cover;
   background-position: center;
   
@@ -372,19 +372,19 @@ const HomePage: React.FC = () => {
       id: 'story1',
       title: getTranslation('successStories.story1.title'),
       description: getTranslation('successStories.story1.description'),
-      image: '/images/success_stories.jpg'
+      image: './images/success_stories.jpg'
     },
     {
       id: 'story2',
       title: getTranslation('successStories.story2.title'),
       description: getTranslation('successStories.story2.description'),
-      image: '/images/supply_chain.jpg'
+      image: './images/supply_chain.jpg'
     },
     {
       id: 'story3',
       title: getTranslation('successStories.story3.title'),
       description: getTranslation('successStories.story3.description'),
-      image: '/images/operations.jpg'
+      image: './images/operations.jpg'
     }
   ];
 
@@ -513,7 +513,7 @@ const HomePage: React.FC = () => {
       {/* About Section */}
       <AboutSection>
         <AboutContainer>
-          <AboutImage src="./images/DSC07810.jpeg" alt="Alexander Döring" />
+          <AboutImage src="../images/DSC07810.jpeg" alt="Alexander Döring" />
           <AboutContent>
             <AboutTitle>{getTranslation('common.about')}</AboutTitle>
             <AboutText>

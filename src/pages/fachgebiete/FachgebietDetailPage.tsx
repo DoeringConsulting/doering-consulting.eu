@@ -153,7 +153,7 @@ const FachgebietDetailPage: React.FC = () => {
       id: 'einkauf',
       title: 'Einkauf & Beschaffung',
       subtitle: 'Strategische Neuausrichtung des Einkaufs, Kostenoptimierung und Lieferantenmanagement',
-      image: '/images/procurement.jpg',
+      image: './images/procurement.jpg',
       services: [
         'Entwicklung von Category-Strategien und Warengruppenmanagement',
         'Implementierung von strategischem Einkaufscontrolling',
@@ -166,7 +166,7 @@ const FachgebietDetailPage: React.FC = () => {
       id: 'supply-chain',
       title: 'Supply Chain Management',
       subtitle: 'End-to-End Optimierung der Lieferkette, Bestandsreduktion und Prozessverbesserung',
-      image: '/images/supply_chain.jpg',
+      image: './images/supply_chain.jpg',
       services: [
         'End-to-End Supply Chain Optimierung',
         'Bestandsoptimierung und Working Capital Reduktion',
@@ -179,7 +179,7 @@ const FachgebietDetailPage: React.FC = () => {
       id: 'operations',
       title: 'Operations',
       subtitle: 'Steigerung der operativen Effizienz, Lean Management und kontinuierliche Verbesserung',
-      image: '/images/operations.jpg',
+      image: './images/operations.jpg',
       services: [
         'Lean Management und kontinuierliche Verbesserung',
         'Prozessoptimierung und Effizienzsteigerung',
@@ -192,7 +192,7 @@ const FachgebietDetailPage: React.FC = () => {
       id: 'sourcing',
       title: 'Sourcing',
       subtitle: 'Strategische Beschaffung, Ausschreibungsmanagement und Vertragsverhandlungen',
-      image: '/images/sourcing.jpg',
+      image: './images/sourcing.jpg',
       services: [
         'Strategische Beschaffung und Marktanalyse',
         'Professionelles Ausschreibungsmanagement (RFI, RFP, RFQ)',
@@ -205,7 +205,7 @@ const FachgebietDetailPage: React.FC = () => {
       id: 'interim',
       title: 'Interim Executive',
       subtitle: 'Temporäre Führungsverantwortung in Schlüsselpositionen des Einkaufs und Supply Chain',
-      image: '/images/interim_executive.jpg',
+      image: './images/interim_executive.jpg',
       services: [
         'Temporäre Führungsverantwortung in Schlüsselpositionen',
         'Überbrückung von Vakanzen im Einkauf und Supply Chain',
@@ -218,7 +218,7 @@ const FachgebietDetailPage: React.FC = () => {
       id: 'digital',
       title: 'Digitale Transformation',
       subtitle: 'Digitalisierung von Einkaufs- und Supply-Chain-Prozessen',
-      image: '/images/digital_transformation.jpg',
+      image: './images/digital_transformation.jpg',
       services: [
         'Digitalisierungsstrategie für Einkauf und Supply Chain',
         'Implementierung von E-Procurement-Lösungen',
