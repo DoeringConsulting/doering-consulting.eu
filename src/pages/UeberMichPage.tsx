@@ -385,7 +385,7 @@ const UeberMichPage: React.FC = () => {
         {/* Header Section */}
         <AboutHeader>
           <AboutImageContainer>
-            <AboutImage src="/images/DSC07810.jpeg" alt="Alexander Döring" />
+            <AboutImage src="./images/DSC07810.jpeg" alt="Alexander Döring" />
           </AboutImageContainer>
           <AboutHeaderContent>
             <AboutTitle>{t('about.title')}</AboutTitle>

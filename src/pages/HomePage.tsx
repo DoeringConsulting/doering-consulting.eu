@@ -513,7 +513,7 @@ const HomePage: React.FC = () => {
       {/* About Section */}
       <AboutSection>
         <AboutContainer>
-          <AboutImage src="/images/DSC07810.jpeg" alt="Alexander Döring" />
+          <AboutImage src="./images/DSC07810.jpeg" alt="Alexander Döring" />
           <AboutContent>
             <AboutTitle>{getTranslation('common.about')}</AboutTitle>
             <AboutText>
