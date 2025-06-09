@@ -128,8 +128,8 @@ const DownloadsPage: React.FC = () => {
   const currentLanguage = i18n.language;
   
   // Define download files based on language
-  const cvFile = currentLanguage === 'en' ? '../downloads/CV_Alexander_Doering_DE.pdf' : '../downloads/CV_Alexander_Doering_DE.pdf';
-  const executiveSummaryFile = currentLanguage === 'en' ? '../downloads/Executive_Summary_Alexander_Döring.pdf' : '../downloads/Executive_Summary_Alexander_Döring.pdf';
+  const cvFile = currentLanguage === 'en' ? './downloads/cv_alexander_doering_de.pdf' : './downloads/cv_alexander_doering_de.pdf';
+  const executiveSummaryFile = currentLanguage === 'en' ? './downloads/executive_summary_alexander_doering.pdf' : './downloads/executive_summary_alexander_doering.pdf';
   
   return (
     <DownloadsSection>
@@ -205,7 +205,7 @@ const DownloadsPage: React.FC = () => {
             <DownloadDescription>
               {t('downloads.projectOverview.description')}
             </DownloadDescription>
-            <DownloadButton href="../downloads/Project_History_2025.pdf" target="_blank" rel="noopener noreferrer">
+            <DownloadButton href="./downloads/project_history_2025.pdf" target="_blank" rel="noopener noreferrer">
               <DownloadButtonIcon>
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
