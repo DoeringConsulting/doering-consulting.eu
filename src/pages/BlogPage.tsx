@@ -143,7 +143,7 @@ const BlogPage: FC = () => {
       excerpt: 'Wie Unternehmen ihre Einkaufsstrategie an sich schnell verändernde Marktbedingungen anpassen können, um Wettbewerbsvorteile zu sichern.',
       category: 'Einkauf',
       date: '15. Mai 2025',
-      image: '/images/procurement.jpg'
+      image: './images/procurement.jpg'
     },
     {
       id: 2,
@@ -151,7 +151,7 @@ const BlogPage: FC = () => {
       excerpt: 'Praktische Ansätze zur Stärkung der Widerstandsfähigkeit von Lieferketten basierend auf Erfahrungen aus vergangenen globalen Disruptionen.',
       category: 'Supply Chain',
       date: '28. April 2025',
-      image: '/images/supply_chain.jpg'
+      image: './images/supply_chain.jpg'
     },
     {
       id: 3,
@@ -159,7 +159,7 @@ const BlogPage: FC = () => {
       excerpt: 'Wie fortschrittliche digitale Technologien den strategischen Einkauf transformieren und welche Implementierungsstrategien erfolgversprechend sind.',
       category: 'Digitalisierung',
       date: '10. April 2025',
-      image: '/images/consulting_meeting.jpg'
+      image: './images/consulting_meeting.jpg'
     },
     {
       id: 4,
@@ -167,7 +167,7 @@ const BlogPage: FC = () => {
       excerpt: 'Wie Unternehmen Nachhaltigkeitskriterien erfolgreich in ihre Beschaffungsprozesse integrieren können, ohne Kompromisse bei Kosten und Qualität einzugehen.',
       category: 'Nachhaltigkeit',
       date: '2. April 2025',
-      image: '/images/procurement.jpg'
+      image: './images/procurement.jpg'
     },
     {
       id: 5,
@@ -175,7 +175,7 @@ const BlogPage: FC = () => {
       excerpt: 'Strategien zur Identifikation, Bewertung und Entwicklung von Lieferanten in einem zunehmend komplexen und globalisierten Geschäftsumfeld.',
       category: 'Sourcing',
       date: '18. März 2025',
-      image: '/images/supply_chain.jpg'
+      image: './images/supply_chain.jpg'
     },
     {
       id: 6,
@@ -183,7 +183,7 @@ const BlogPage: FC = () => {
       excerpt: 'Wie Interim Manager schnell Wirkung erzielen können und welche Kompetenzen für den Erfolg in temporären Führungspositionen entscheidend sind.',
       category: 'Interim Management',
       date: '5. März 2025',
-      image: '/images/interim_executive.jpg'
+      image: './images/interim_executive.jpg'
     }
   ];
 

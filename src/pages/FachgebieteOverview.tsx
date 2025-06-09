@@ -134,37 +134,37 @@ const FachgebieteOverview: FC = () => {
       id: 'einkauf',
       title: t('expertise.procurement.title'),
       description: t('expertise.procurement.description'),
-      image: '/images/procurement.jpg'
+      image: './images/procurement.jpg'
     },
     {
       id: 'supply-chain',
       title: t('expertise.supplyChain.title'),
       description: t('expertise.supplyChain.description'),
-      image: '/images/supply_chain.jpg'
+      image: './images/supply_chain.jpg'
     },
     {
       id: 'operations',
       title: t('expertise.operations.title'),
       description: t('expertise.operations.description'),
-      image: '/images/operations.jpg'
+      image: './images/operations.jpg'
     },
     {
       id: 'sourcing',
       title: t('expertise.sourcing.title'),
       description: t('expertise.sourcing.description'),
-      image: '/images/consulting_meeting.jpg'
+      image: './images/consulting_meeting.jpg'
     },
     {
       id: 'interim',
       title: t('expertise.interim.title'),
       description: t('expertise.interim.description'),
-      image: '/images/interim_executive.jpg'
+      image: './images/interim_executive.jpg'
     },
     {
       id: 'digital',
       title: t('expertise.digital.title', 'Digitale Transformation'),
       description: t('expertise.digital.description', 'Begleitung bei der Digitalisierung von Einkaufs- und Supply-Chain-Prozessen, Implementierung von digitalen Tools und Entwicklung einer Digitalisierungsstrategie.'),
-      image: '/images/consulting_meeting.jpg'
+      image: './images/consulting_meeting.jpg'
     }
   ];
 

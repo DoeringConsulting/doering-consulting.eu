@@ -304,7 +304,7 @@ const ErfolgsgeschichtenPage: React.FC = () => {
         'Implementierung eines digitalen Beschaffungssystems mit 95% Prozessabdeckung',
         'Verkürzung der Durchlaufzeiten im Einkauf um 40%'
       ],
-      image: '/images/procurement.jpg'
+      image: './images/procurement.jpg'
     },
     {
       title: 'Supply Chain Optimierung für globalen Elektronikkonzern',
@@ -317,7 +317,7 @@ const ErfolgsgeschichtenPage: React.FC = () => {
         'Senkung der Logistikkosten um 15%',
         'Verbesserung der Prognosegenauigkeit um 40%'
       ],
-      image: '/images/supply_chain.jpg'
+      image: './images/supply_chain.jpg'
     },
     {
       title: 'Digitale Transformation der Beschaffungsprozesse bei Pharmaunternehmen',
@@ -331,7 +331,7 @@ const ErfolgsgeschichtenPage: React.FC = () => {
         'Steigerung der Compliance-Rate auf 99%',
         'ROI innerhalb von 9 Monaten erreicht'
       ],
-      image: '/images/consulting_meeting.jpg'
+      image: './images/consulting_meeting.jpg'
     },
     {
       title: 'Kostenoptimierung durch strategisches Sourcing bei Maschinenbauunternehmen',
@@ -344,7 +344,7 @@ const ErfolgsgeschichtenPage: React.FC = () => {
         'Verbesserung der Lieferantenqualität um 30%',
         'Aufbau eines globalen Lieferantennetzwerks mit 40% Anteil an Low-Cost-Country Sourcing'
       ],
-      image: '/images/operations.jpg'
+      image: './images/operations.jpg'
     }
   ];
 
