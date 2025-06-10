@@ -51,16 +51,13 @@ const DownloadCard = styled.div`
   }
 `;
 
-const DownloadIcon = styled.div`
-  width: 60px;
-  height: 60px;
-  background-color: ${props => props.theme.colors.primary};
-  border-radius: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+const IconContainer = styled.div`
   margin-bottom: 1.5rem;
-  color: ${props => props.theme.colors.white};
+  svg {
+    width: 48px;
+    height: 48px;
+    color: ${props => props.theme.colors.primary};
+  }
 `;
 
 const DownloadTitle = styled.h3`
@@ -101,10 +98,10 @@ const DownloadButtonIcon = styled.span`
 const DownloadsPage: React.FC = () => {
   const { t } = useTranslation();
 
-  // Nur die englische CV-Version verwenden
-  const cvFile = './downloads/cv_alexander_doering_en.pdf';
-  const executiveSummaryFile = './downloads/executive_summary_alexander_doering.pdf';
-  const projectOverviewFile = './downloads/projects.pdf';
+  // Absolute Pfade für alle Downloads verwenden
+  const cvFile = '/downloads/cv_alexander_doering_en.pdf';
+  const executiveSummaryFile = '/downloads/executive_summary_alexander_doering.pdf';
+  const projectOverviewFile = '/downloads/projects.pdf';
 
   return (
     <DownloadsSection>
@@ -115,16 +112,19 @@ const DownloadsPage: React.FC = () => {
         </DownloadsHeader>
         <DownloadsGrid>
           <DownloadCard>
-            <DownloadIcon>
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 16L12 8" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M9 13L12 16L15 13" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M20 16V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V16" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            {/* Beschriebenes Dokument Symbol */}
+            <IconContainer>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
               </svg>
-            </DownloadIcon>
+            </IconContainer>
             <DownloadTitle>{t('downloads.cv.title')}</DownloadTitle>
             <DownloadDescription>{t('downloads.cv.description')}</DownloadDescription>
-            <DownloadButton href={cvFile} target="_blank" rel="noopener noreferrer">
+            <DownloadButton href={cvFile} target="_blank" rel="noopener noreferrer" download>
               <DownloadButtonIcon>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 16L12 8" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -137,16 +137,16 @@ const DownloadsPage: React.FC = () => {
           </DownloadCard>
 
           <DownloadCard>
-            <DownloadIcon>
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 16L12 8" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M9 13L12 16L15 13" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M20 16V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V16" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            {/* Leeres Dokument Symbol */}
+            <IconContainer>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
               </svg>
-            </DownloadIcon>
+            </IconContainer>
             <DownloadTitle>{t('downloads.executiveSummary.title')}</DownloadTitle>
             <DownloadDescription>{t('downloads.executiveSummary.description')}</DownloadDescription>
-            <DownloadButton href={executiveSummaryFile} target="_blank" rel="noopener noreferrer">
+            <DownloadButton href={executiveSummaryFile} target="_blank" rel="noopener noreferrer" download>
               <DownloadButtonIcon>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 16L12 8" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -159,16 +159,16 @@ const DownloadsPage: React.FC = () => {
           </DownloadCard>
 
           <DownloadCard>
-            <DownloadIcon>
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 16L12 8" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M9 13L12 16L15 13" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <path d="M20 16V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V16" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            {/* Koffer Symbol */}
+            <IconContainer>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
               </svg>
-            </DownloadIcon>
+            </IconContainer>
             <DownloadTitle>{t('downloads.projectOverview.title')}</DownloadTitle>
             <DownloadDescription>{t('downloads.projectOverview.description')}</DownloadDescription>
-            <DownloadButton href={projectOverviewFile} target="_blank" rel="noopener noreferrer">
+            <DownloadButton href={projectOverviewFile} target="_blank" rel="noopener noreferrer" download>
               <DownloadButtonIcon>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 16L12 8" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
