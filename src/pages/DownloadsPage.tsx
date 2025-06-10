@@ -1,5 +1,4 @@
-
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
 
@@ -55,13 +54,13 @@ const DownloadCard = styled.div`
 const DownloadIcon = styled.div`
   width: 60px;
   height: 60px;
-  background-color: ${props => props.theme.colors.primary}10;
-  border-radius: 50%;
+  background-color: ${props => props.theme.colors.primary};
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 1.5rem;
-  color: ${props => props.theme.colors.primary};
+  color: ${props => props.theme.colors.white};
 `;
 
 const DownloadTitle = styled.h3`
@@ -87,6 +86,8 @@ const DownloadButton = styled.a`
   text-decoration: none;
   font-weight: 600;
   transition: background-color 0.3s ease;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
 
   &:hover {
     background-color: ${props => props.theme.colors.primary}dd;
@@ -99,13 +100,31 @@ const DownloadButtonIcon = styled.span`
   justify-content: center;
 `;
 
+const LanguageSelector = styled.div`
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+`;
+
+const LanguageButton = styled.button<{ isActive: boolean }>`
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  border: 1px solid ${props => props.theme.colors.primary};
+  background-color: ${props => props.isActive ? props.theme.colors.primary : 'transparent'};
+  color: ${props => props.isActive ? props.theme.colors.white : props.theme.colors.primary};
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+
+  &:hover {
+    background-color: ${props => props.isActive ? props.theme.colors.primary : props.theme.colors.primary}20;
+  }
+`;
+
 const DownloadsPage: React.FC = () => {
   const { t, i18n } = useTranslation();
-  const currentLanguage = i18n.language;
+  const [selectedCVLanguage, setSelectedCVLanguage] = useState<'de' | 'en'>(i18n.language === 'en' ? 'en' : 'de');
 
-  const cvFile = currentLanguage === 'en'
-    ? './downloads/cv_alexander_doering_en.pdf'
-    : './downloads/cv_alexander_doering_de.pdf';
   const executiveSummaryFile = './downloads/executive_summary_alexander_doering.pdf';
   const projectOverviewFile = './downloads/projects.pdf';
 
@@ -118,31 +137,87 @@ const DownloadsPage: React.FC = () => {
         </DownloadsHeader>
         <DownloadsGrid>
           <DownloadCard>
-            <DownloadIcon>📄</DownloadIcon>
+            <DownloadIcon>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 16L12 8" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M9 13L12 16L15 13" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M20 16V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V16" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </DownloadIcon>
             <DownloadTitle>{t('downloads.cv.title')}</DownloadTitle>
             <DownloadDescription>{t('downloads.cv.description')}</DownloadDescription>
-            <DownloadButton href={cvFile} target="_blank" rel="noopener noreferrer">
-              <DownloadButtonIcon>⬇</DownloadButtonIcon>
+            
+            <LanguageSelector>
+              <LanguageButton 
+                isActive={selectedCVLanguage === 'de'} 
+                onClick={() => setSelectedCVLanguage('de')}
+              >
+                Deutsch
+              </LanguageButton>
+              <LanguageButton 
+                isActive={selectedCVLanguage === 'en'} 
+                onClick={() => setSelectedCVLanguage('en')}
+              >
+                English
+              </LanguageButton>
+            </LanguageSelector>
+            
+            <DownloadButton 
+              href={`./downloads/cv_alexander_doering_${selectedCVLanguage}.pdf`} 
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              <DownloadButtonIcon>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 16L12 8" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M9 13L12 16L15 13" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M20 16V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V16" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </DownloadButtonIcon>
               {t('downloads.cv.button')}
             </DownloadButton>
           </DownloadCard>
 
           <DownloadCard>
-            <DownloadIcon>📄</DownloadIcon>
+            <DownloadIcon>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 16L12 8" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M9 13L12 16L15 13" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M20 16V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V16" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </DownloadIcon>
             <DownloadTitle>{t('downloads.executiveSummary.title')}</DownloadTitle>
             <DownloadDescription>{t('downloads.executiveSummary.description')}</DownloadDescription>
             <DownloadButton href={executiveSummaryFile} target="_blank" rel="noopener noreferrer">
-              <DownloadButtonIcon>⬇</DownloadButtonIcon>
+              <DownloadButtonIcon>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 16L12 8" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M9 13L12 16L15 13" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M20 16V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V16" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </DownloadButtonIcon>
               {t('downloads.executiveSummary.button')}
             </DownloadButton>
           </DownloadCard>
 
           <DownloadCard>
-            <DownloadIcon>📄</DownloadIcon>
+            <DownloadIcon>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 16L12 8" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M9 13L12 16L15 13" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <path d="M20 16V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V16" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
+            </DownloadIcon>
             <DownloadTitle>{t('downloads.projectOverview.title')}</DownloadTitle>
             <DownloadDescription>{t('downloads.projectOverview.description')}</DownloadDescription>
             <DownloadButton href={projectOverviewFile} target="_blank" rel="noopener noreferrer">
-              <DownloadButtonIcon>⬇</DownloadButtonIcon>
+              <DownloadButtonIcon>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 16L12 8" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M9 13L12 16L15 13" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path d="M20 16V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18V16" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </DownloadButtonIcon>
               {t('downloads.projectOverview.button')}
             </DownloadButton>
           </DownloadCard>
