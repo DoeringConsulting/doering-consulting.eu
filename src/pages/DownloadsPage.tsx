@@ -98,7 +98,7 @@ const DownloadButtonIcon = styled.span`
 const DownloadsPage: React.FC = () => {
   const { t } = useTranslation();
 
-  // Absolute Pfade für alle Downloads verwenden
+  // Absolute Pfade für alle Downloads verwenden mit type="application/pdf" hinzugefügt
   const cvFile = '/downloads/cv_alexander_doering_en.pdf';
   const executiveSummaryFile = '/downloads/executive_summary_alexander_doering.pdf';
   const projectOverviewFile = '/downloads/projects.pdf';
@@ -124,7 +124,13 @@ const DownloadsPage: React.FC = () => {
             </IconContainer>
             <DownloadTitle>{t('downloads.cv.title')}</DownloadTitle>
             <DownloadDescription>{t('downloads.cv.description')}</DownloadDescription>
-            <DownloadButton href={cvFile} target="_blank" rel="noopener noreferrer" download>
+            <DownloadButton 
+              href={cvFile} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              download="cv_alexander_doering_en.pdf"
+              type="application/pdf"
+            >
               <DownloadButtonIcon>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 16L12 8" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -146,7 +152,13 @@ const DownloadsPage: React.FC = () => {
             </IconContainer>
             <DownloadTitle>{t('downloads.executiveSummary.title')}</DownloadTitle>
             <DownloadDescription>{t('downloads.executiveSummary.description')}</DownloadDescription>
-            <DownloadButton href={executiveSummaryFile} target="_blank" rel="noopener noreferrer" download>
+            <DownloadButton 
+              href={executiveSummaryFile} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              download="executive_summary_alexander_doering.pdf"
+              type="application/pdf"
+            >
               <DownloadButtonIcon>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 16L12 8" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -168,7 +180,13 @@ const DownloadsPage: React.FC = () => {
             </IconContainer>
             <DownloadTitle>{t('downloads.projectOverview.title')}</DownloadTitle>
             <DownloadDescription>{t('downloads.projectOverview.description')}</DownloadDescription>
-            <DownloadButton href={projectOverviewFile} target="_blank" rel="noopener noreferrer" download>
+            <DownloadButton 
+              href={projectOverviewFile} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              download="projects.pdf"
+              type="application/pdf"
+            >
               <DownloadButtonIcon>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 16L12 8" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
