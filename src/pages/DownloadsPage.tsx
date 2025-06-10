@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
 
@@ -86,8 +86,6 @@ const DownloadButton = styled.a`
   text-decoration: none;
   font-weight: 600;
   transition: background-color 0.3s ease;
-  margin-right: 0.5rem;
-  margin-bottom: 0.5rem;
 
   &:hover {
     background-color: ${props => props.theme.colors.primary}dd;
@@ -100,31 +98,11 @@ const DownloadButtonIcon = styled.span`
   justify-content: center;
 `;
 
-const LanguageSelector = styled.div`
-  margin-bottom: 1rem;
-  display: flex;
-  gap: 1rem;
-`;
-
-const LanguageButton = styled.button<{ isActive: boolean }>`
-  padding: 0.5rem 1rem;
-  border-radius: 4px;
-  border: 1px solid ${props => props.theme.colors.primary};
-  background-color: ${props => props.isActive ? props.theme.colors.primary : 'transparent'};
-  color: ${props => props.isActive ? props.theme.colors.white : props.theme.colors.primary};
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-weight: 600;
-
-  &:hover {
-    background-color: ${props => props.isActive ? props.theme.colors.primary : props.theme.colors.primary}20;
-  }
-`;
-
 const DownloadsPage: React.FC = () => {
-  const { t, i18n } = useTranslation();
-  const [selectedCVLanguage, setSelectedCVLanguage] = useState<'de' | 'en'>(i18n.language === 'en' ? 'en' : 'de');
+  const { t } = useTranslation();
 
+  // Nur die englische CV-Version verwenden
+  const cvFile = './downloads/cv_alexander_doering_en.pdf';
   const executiveSummaryFile = './downloads/executive_summary_alexander_doering.pdf';
   const projectOverviewFile = './downloads/projects.pdf';
 
@@ -146,27 +124,7 @@ const DownloadsPage: React.FC = () => {
             </DownloadIcon>
             <DownloadTitle>{t('downloads.cv.title')}</DownloadTitle>
             <DownloadDescription>{t('downloads.cv.description')}</DownloadDescription>
-            
-            <LanguageSelector>
-              <LanguageButton 
-                isActive={selectedCVLanguage === 'de'} 
-                onClick={() => setSelectedCVLanguage('de')}
-              >
-                Deutsch
-              </LanguageButton>
-              <LanguageButton 
-                isActive={selectedCVLanguage === 'en'} 
-                onClick={() => setSelectedCVLanguage('en')}
-              >
-                English
-              </LanguageButton>
-            </LanguageSelector>
-            
-            <DownloadButton 
-              href={`./downloads/cv_alexander_doering_${selectedCVLanguage}.pdf`} 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
+            <DownloadButton href={cvFile} target="_blank" rel="noopener noreferrer">
               <DownloadButtonIcon>
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 16L12 8" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
