@@ -1,0 +1,285 @@
+{
+  "common": {
+    "language": "Deutsch",
+    "languageSwitch": "Switch to English",
+    "home": "Startseite",
+    "about": "Über Mich",
+    "expertise": "Fachgebiete",
+    "contact": "Kontakt",
+    "downloads": "Downloads",
+    "blog": "Blog",
+    "success_stories": "Erfolgsgeschichten",
+    "partners": "Partner & Netzwerk",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "contactMe": "Kontakt aufnehmen",
+    "readMore": "Mehr erfahren",
+    "filter": "Filtern",
+    "all": "Alle"
+  },
+  "home": {
+    "hero": {
+      "title": "Alexander Döring",
+      "subtitle": "Beratung für Einkauf, Supply Chain Management & Operations",
+      "description": "Maßgeschneiderte Lösungen für nachhaltige Wertschöpfung und Kostenoptimierung",
+      "cta": "Mehr erfahren"
+    },
+    "intro": {
+      "title": "Willkommen bei DÖRING Consulting",
+      "description": "Mit über 15 Jahren Erfahrung in führenden Positionen im Bereich Einkauf und Supply Chain Management biete ich maßgeschneiderte Beratungslösungen für Unternehmen jeder Größe. Meine Expertise umfasst die strategische Transformation von Einkaufsabteilungen, die Optimierung von Supply Chain Prozessen, die Implementierung von Operational Excellence und das Interim Management in Schlüsselpositionen."
+    },
+    "expertise": {
+      "title": "Meine Fachgebiete",
+      "description": "Spezialisiert auf die Optimierung von Einkauf, Supply Chain und Operations",
+      "procurement": {
+        "title": "Einkauf & Beschaffung",
+        "description": "Strategische Neuausrichtung des Einkaufs, Kostenoptimierung und Lieferantenmanagement"
+      },
+      "supplyChain": {
+        "title": "Supply Chain Management",
+        "description": "End-to-End Optimierung der Lieferkette, Bestandsreduktion und Prozessverbesserung"
+      },
+      "operations": {
+        "title": "Operations",
+        "description": "Steigerung der operativen Effizienz, Lean Management und kontinuierliche Verbesserung"
+      },
+      "sourcing": {
+        "title": "Sourcing",
+        "description": "Strategische Beschaffung, Ausschreibungsmanagement und Vertragsverhandlungen"
+      },
+      "interim": {
+        "title": "Interim Executive",
+        "description": "Temporäre Führungsverantwortung in Schlüsselpositionen des Einkaufs und Supply Chain"
+      }
+    },
+    "successStories": {
+      "title": "Erfolgsgeschichten",
+      "description": "Erfahren Sie, wie ich Unternehmen zu messbaren Ergebnissen verholfen habe",
+      "cta": "Alle Erfolgsgeschichten ansehen"
+    },
+    "cta": {
+      "title": "Bereit, Ihr Unternehmen zu optimieren?",
+      "description": "Kontaktieren Sie mich noch heute, um zu besprechen, wie ich Ihnen helfen kann, messbare Ergebnisse in den Bereichen Einkauf, Supply Chain Management und Operations zu erzielen.",
+      "button": "Kontakt aufnehmen"
+    }
+  },
+  "about": {
+    "title": "Alexander Döring",
+    "subtitle": "Berater für Einkauf, Supply Chain Management & Operations",
+    "intro": {
+      "part1": "Mit über 15 Jahren Erfahrung in führenden Positionen im Bereich Einkauf und Supply Chain Management biete ich maßgeschneiderte Beratungslösungen für Unternehmen jeder Größe. Meine Expertise umfasst die strategische Transformation von Einkaufsabteilungen, die Optimierung von Supply Chain Prozessen, die Implementierung von Operational Excellence und das Interim Management in Schlüsselpositionen.",
+      "part2": "Mein Ziel ist es, Unternehmen dabei zu unterstützen, ihre Wettbewerbsfähigkeit zu steigern, Kosten zu optimieren und nachhaltige Wertschöpfung zu erzielen. Durch meine praxisorientierte Herangehensweise und tiefgreifende Branchenkenntnis entwickle ich individuelle Lösungen, die messbare Ergebnisse liefern."
+    },
+    "experience": {
+      "title": "Berufliche Erfahrung",
+      "current": "Heute"
+    },
+    "skills": {
+      "title": "Kompetenzen",
+      "strategic": "Strategische Kompetenzen",
+      "operational": "Operative Kompetenzen",
+      "leadership": "Führungskompetenzen"
+    },
+    "education": {
+      "title": "Ausbildung & Zertifizierungen"
+    },
+    "cta": {
+      "title": "Lassen Sie uns zusammenarbeiten",
+      "description": "Sind Sie bereit, Ihre Einkaufs- und Supply-Chain-Prozesse zu optimieren und messbare Ergebnisse zu erzielen? Kontaktieren Sie mich für ein unverbindliches Gespräch über Ihre spezifischen Anforderungen und Ziele.",
+      "button": "Kontakt aufnehmen"
+    }
+  },
+  "expertise": {
+    "title": "Meine Fachgebiete",
+    "intro": "Als erfahrener Berater biete ich spezialisierte Dienstleistungen in folgenden Bereichen an:",
+    "procurement": {
+      "title": "Einkauf & Beschaffung",
+      "description": "Strategische Neuausrichtung des Einkaufs, Entwicklung von Category-Strategien, Implementierung von Einkaufscontrolling und KPI-Systemen, Kostenoptimierung und professionelles Lieferantenmanagement.",
+      "services": [
+        "Entwicklung von Category-Strategien und Warengruppenmanagement",
+        "Implementierung von strategischem Einkaufscontrolling",
+        "Optimierung der Einkaufsorganisation und -prozesse",
+        "Kostenstrukturanalyse und Identifikation von Einsparpotenzialen",
+        "Professionelles Lieferantenmanagement und -entwicklung"
+      ]
+    },
+    "supplyChain": {
+      "title": "Supply Chain Management",
+      "description": "End-to-End Optimierung der Lieferkette, Bestandsreduktion, Prozessverbesserung und Implementierung von Supply Chain Visibility und Risikomanagement.",
+      "services": [
+        "End-to-End Supply Chain Optimierung",
+        "Bestandsoptimierung und Working Capital Reduktion",
+        "Implementierung von S2P und P2P Prozessen",
+        "Supply Chain Visibility und Risikomanagement",
+        "Digitalisierung der Supply Chain"
+      ]
+    },
+    "operations": {
+      "title": "Operations",
+      "description": "Steigerung der operativen Effizienz, Implementierung von Lean Management, kontinuierliche Verbesserung und Prozessoptimierung.",
+      "services": [
+        "Lean Management und kontinuierliche Verbesserung",
+        "Prozessoptimierung und Effizienzsteigerung",
+        "Implementierung von Operational Excellence",
+        "Produktivitätssteigerung und Kostensenkung",
+        "Change Management und Mitarbeiterentwicklung"
+      ]
+    },
+    "sourcing": {
+      "title": "Sourcing",
+      "description": "Strategische Beschaffung, professionelles Ausschreibungsmanagement, Vertragsverhandlungen und Aufbau globaler Sourcing-Netzwerke.",
+      "services": [
+        "Strategische Beschaffung und Marktanalyse",
+        "Professionelles Ausschreibungsmanagement (RFI, RFP, RFQ)",
+        "Vertragsverhandlungen und -management",
+        "Aufbau globaler Sourcing-Netzwerke",
+        "Lieferantenauswahl und -bewertung"
+      ]
+    },
+    "interim": {
+      "title": "Interim Executive",
+      "description": "Temporäre Führungsverantwortung in Schlüsselpositionen des Einkaufs und Supply Chain, Überbrückung von Vakanzen und Unterstützung in Transformationsphasen.",
+      "services": [
+        "Temporäre Führungsverantwortung in Schlüsselpositionen",
+        "Überbrückung von Vakanzen im Einkauf und Supply Chain",
+        "Unterstützung in Transformationsphasen",
+        "Krisenmanagement und Turnaround",
+        "Aufbau und Entwicklung von Teams"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Nehmen Sie Kontakt auf",
+    "description": "Haben Sie Fragen oder möchten Sie mehr über meine Dienstleistungen erfahren? Füllen Sie das Formular aus und ich werde mich umgehend bei Ihnen melden.",
+    "form": {
+      "name": "Name",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "company": "Unternehmen",
+      "message": "Nachricht",
+      "submit": "Nachricht senden",
+      "required": "Pflichtfeld",
+      "success": "Vielen Dank für Ihre Nachricht. Ich werde mich umgehend bei Ihnen melden.",
+      "error": "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut."
+    },
+    "info": {
+      "title": "Kontaktinformationen",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "address": "Adresse"
+    }
+  },
+  "downloads": {
+    "title": "Downloads",
+    "subtitle": "Dokumente und Informationen",
+    "description": "Hier finden Sie verschiedene Dokumente und Informationen zum Download.",
+    "cv": {
+      "title": "Lebenslauf",
+      "description": "Detaillierter Lebenslauf mit Informationen zu meiner beruflichen Laufbahn, Ausbildung und Kompetenzen.",
+      "button": "Lebenslauf herunterladen"
+    },
+    "executiveSummary": {
+      "title": "Executive Summary",
+      "description": "Kompakte Übersicht meiner Qualifikationen, Erfahrungen und Erfolge.",
+      "button": "Executive Summary herunterladen"
+    },
+    "projectOverview": {
+      "title": "Projektübersicht",
+      "description": "Übersicht über ausgewählte Projekte und erzielte Ergebnisse.",
+      "button": "Projektübersicht herunterladen"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Fachbeiträge und Insights",
+    "description": "Hier finden Sie aktuelle Fachbeiträge und Insights zu den Themen Einkauf, Supply Chain Management und Operations.",
+    "readMore": "Weiterlesen",
+    "categories": "Kategorien",
+    "recentPosts": "Neueste Beiträge",
+    "search": "Suchen",
+    "noResults": "Keine Ergebnisse gefunden."
+  },
+  "successStories": {
+    "title": "Erfolgsgeschichten",
+    "subtitle": "Referenzprojekte und Ergebnisse",
+    "description": "Erfahren Sie, wie ich Unternehmen zu messbaren Ergebnissen verholfen habe.",
+    "metrics": {
+      "savings": "Einsparungen",
+      "volume": "Einkaufsvolumen",
+      "duration": "Projektdauer",
+      "team": "Teamgröße"
+    },
+    "testimonials": {
+      "title": "Kundenstimmen",
+      "subtitle": "Was Kunden über die Zusammenarbeit sagen"
+    },
+    "story1": {
+      "title": "Kostenreduktion um 15% durch strategische Einkaufsoptimierung",
+      "description": "Für einen mittelständischen Industriebetrieb wurde eine umfassende Neuausrichtung des Einkaufs durchgeführt, die zu signifikanten Einsparungen führte."
+    },
+    "story2": {
+      "title": "Supply Chain Transformation in der Automobilindustrie",
+      "description": "Implementierung einer digitalen Supply Chain Lösung, die die Lieferkettenresilienz verbesserte und Lieferengpässe um 40% reduzierte."
+    },
+    "story3": {
+      "title": "Operational Excellence in der Produktion",
+      "description": "Durch die Einführung von Lean-Management-Prinzipien konnte die Produktionseffizienz um 25% gesteigert und die Durchlaufzeiten halbiert werden."
+    }
+  },
+  "partners": {
+    "title": "Partner & Berater",
+    "subtitle": "Unser Netzwerk von Experten",
+    "description": "Lernen Sie unser Netzwerk von erfahrenen Partnern und Beratern kennen, die spezialisierte Expertise in verschiedenen Bereichen bieten.",
+    "filter": {
+      "title": "Nach Fachgebiet filtern",
+      "all": "Alle",
+      "procurement": "Einkauf & Beschaffung",
+      "supplyChain": "Supply Chain Management",
+      "operations": "Operations",
+      "sourcing": "Sourcing",
+      "interim": "Interim Management",
+      "other": "Weitere Bereiche"
+    },
+    "contact": "Kontakt aufnehmen",
+    "expertise": "Fachgebiete",
+    "languages": "Sprachen",
+    "noResults": "Keine Partner mit den ausgewählten Kriterien gefunden."
+  },
+  "imprint": {
+    "title": "Impressum",
+    "subtitle": "Gesetzliche Angaben",
+    "companyInfo": {
+      "title": "Unternehmensangaben",
+      "name": "DÖRING Consulting",
+      "owner": "Alexander Döring",
+      "address": "Adresse",
+      "contact": "Kontakt",
+      "email": "E-Mail",
+      "phone": "Telefon",
+      "taxId": "Steuer-ID",
+      "vatId": "USt-IdNr."
+    },
+    "disclaimer": {
+      "title": "Haftungsausschluss",
+      "content": "Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich."
+    }
+  },
+  "privacy": {
+    "title": "Datenschutz",
+    "subtitle": "Datenschutzerklärung",
+    "intro": "Der Schutz Ihrer persönlichen Daten ist uns ein wichtiges Anliegen. In dieser Datenschutzerklärung informieren wir Sie über die Erhebung, Verarbeitung und Nutzung Ihrer Daten.",
+    "dataCollection": {
+      "title": "Datenerhebung",
+      "content": "Wir erheben und speichern automatisch Informationen in Log-Dateien, die Ihr Browser an uns übermittelt. Dies sind: Browsertyp/-version, verwendetes Betriebssystem, Referrer URL, Hostname des zugreifenden Rechners, Uhrzeit der Serveranfrage."
+    },
+    "cookies": {
+      "title": "Cookies",
+      "content": "Unsere Website verwendet Cookies. Cookies sind kleine Textdateien, die auf Ihrem Rechner abgelegt werden und die Ihr Browser speichert. Sie dienen dazu, unser Angebot nutzerfreundlicher, effektiver und sicherer zu machen."
+    },
+    "rights": {
+      "title": "Ihre Rechte",
+      "content": "Sie haben jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung sowie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten."
+    }
+  }
+}

@@ -1,0 +1,285 @@
+{
+  "common": {
+    "language": "English",
+    "languageSwitch": "Zu Deutsch wechseln",
+    "home": "Home",
+    "about": "About Me",
+    "expertise": "Areas of Expertise",
+    "contact": "Contact",
+    "downloads": "Downloads",
+    "blog": "Blog",
+    "success_stories": "Success Stories",
+    "partners": "Partners & Consultants",
+    "imprint": "Legal Notice",
+    "privacy": "Privacy Policy",
+    "contactMe": "Contact Me",
+    "readMore": "Read More",
+    "filter": "Filter",
+    "all": "All"
+  },
+  "home": {
+    "hero": {
+      "title": "DÖRING Consulting",
+      "subtitle": "Consulting for Procurement, Supply Chain Management & Operations",
+      "description": "Tailored solutions for sustainable value creation and cost optimization",
+      "cta": "Learn More"
+    },
+    "intro": {
+      "title": "Welcome to DÖRING Consulting",
+      "description": "With over 15 years of experience in leadership positions in procurement and supply chain management, I offer customized consulting solutions for companies of all sizes. My expertise includes strategic transformation of procurement departments, optimization of supply chain processes, implementation of operational excellence, and interim management in key positions."
+    },
+    "expertise": {
+      "title": "My Areas of Expertise",
+      "description": "Specialized in optimizing procurement, supply chain and operations",
+      "procurement": {
+        "title": "Procurement & Purchasing",
+        "description": "Strategic realignment of procurement, cost optimization and supplier management"
+      },
+      "supplyChain": {
+        "title": "Supply Chain Management",
+        "description": "End-to-end supply chain optimization, inventory reduction and process improvement"
+      },
+      "operations": {
+        "title": "Operations",
+        "description": "Increasing operational efficiency, lean management and continuous improvement"
+      },
+      "sourcing": {
+        "title": "Sourcing",
+        "description": "Strategic sourcing, tender management and contract negotiations"
+      },
+      "interim": {
+        "title": "Interim Executive",
+        "description": "Temporary leadership responsibility in key procurement and supply chain positions"
+      }
+    },
+    "successStories": {
+      "title": "Success Stories",
+      "description": "Discover how I've helped companies achieve measurable results",
+      "cta": "View All Success Stories"
+    },
+    "cta": {
+      "title": "Ready to Optimize Your Business?",
+      "description": "Contact me today to discuss how I can help you achieve measurable results in procurement, supply chain management, and operations.",
+      "button": "Get in Touch"
+    }
+  },
+  "about": {
+    "title": "Alexander Döring",
+    "subtitle": "Consultant for Procurement, Supply Chain Management & Operations",
+    "intro": {
+      "part1": "With over 15 years of experience in leadership positions in procurement and supply chain management, I offer customized consulting solutions for companies of all sizes. My expertise includes strategic transformation of procurement departments, optimization of supply chain processes, implementation of operational excellence, and interim management in key positions.",
+      "part2": "My goal is to help companies enhance their competitiveness, optimize costs, and achieve sustainable value creation. Through my practice-oriented approach and deep industry knowledge, I develop individual solutions that deliver measurable results."
+    },
+    "experience": {
+      "title": "Professional Experience",
+      "current": "Present"
+    },
+    "skills": {
+      "title": "Competencies",
+      "strategic": "Strategic Competencies",
+      "operational": "Operational Competencies",
+      "leadership": "Leadership Competencies"
+    },
+    "education": {
+      "title": "Education & Certifications"
+    },
+    "cta": {
+      "title": "Let's Work Together",
+      "description": "Are you ready to optimize your procurement and supply chain processes and achieve measurable results? Contact me for a non-binding discussion about your specific requirements and objectives.",
+      "button": "Get in Touch"
+    }
+  },
+  "expertise": {
+    "title": "My Areas of Expertise",
+    "intro": "As an experienced consultant, I offer specialized services in the following areas:",
+    "procurement": {
+      "title": "Procurement & Purchasing",
+      "description": "Strategic realignment of procurement, development of category strategies, implementation of procurement controlling and KPI systems, cost optimization and professional supplier management.",
+      "services": [
+        "Development of category strategies and commodity group management",
+        "Implementation of strategic procurement controlling",
+        "Optimization of procurement organization and processes",
+        "Cost structure analysis and identification of savings potential",
+        "Professional supplier management and development"
+      ]
+    },
+    "supplyChain": {
+      "title": "Supply Chain Management",
+      "description": "End-to-end optimization of the supply chain, inventory reduction, process improvement and implementation of supply chain visibility and risk management.",
+      "services": [
+        "End-to-end supply chain optimization",
+        "Inventory optimization and working capital reduction",
+        "Implementation of S2P and P2P processes",
+        "Supply chain visibility and risk management",
+        "Digitalization of the supply chain"
+      ]
+    },
+    "operations": {
+      "title": "Operations",
+      "description": "Increasing operational efficiency, implementation of lean management, continuous improvement and process optimization.",
+      "services": [
+        "Lean management and continuous improvement",
+        "Process optimization and efficiency enhancement",
+        "Implementation of operational excellence",
+        "Productivity improvement and cost reduction",
+        "Change management and employee development"
+      ]
+    },
+    "sourcing": {
+      "title": "Sourcing",
+      "description": "Strategic sourcing, professional tender management, contract negotiations and establishment of global sourcing networks.",
+      "services": [
+        "Strategic sourcing and market analysis",
+        "Professional tender management (RFI, RFP, RFQ)",
+        "Contract negotiations and management",
+        "Establishment of global sourcing networks",
+        "Supplier selection and evaluation"
+      ]
+    },
+    "interim": {
+      "title": "Interim Executive",
+      "description": "Temporary leadership responsibility in key procurement and supply chain positions, bridging vacancies and support during transformation phases.",
+      "services": [
+        "Temporary leadership responsibility in key positions",
+        "Bridging vacancies in procurement and supply chain",
+        "Support during transformation phases",
+        "Crisis management and turnaround",
+        "Team building and development"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Get in Touch",
+    "description": "Do you have questions or would you like to learn more about my services? Fill out the form and I will get back to you promptly.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "company": "Company",
+      "message": "Message",
+      "submit": "Send Message",
+      "required": "Required field",
+      "success": "Thank you for your message. I will get back to you promptly.",
+      "error": "An error has occurred. Please try again later."
+    },
+    "info": {
+      "title": "Contact Information",
+      "email": "Email",
+      "phone": "Phone",
+      "address": "Address"
+    }
+  },
+  "downloads": {
+    "title": "Downloads",
+    "subtitle": "Documents and Information",
+    "description": "Here you can find various documents and information for download.",
+    "cv": {
+      "title": "Curriculum Vitae",
+      "description": "Detailed CV with information about my professional career, education, and competencies.",
+      "button": "Download CV"
+    },
+    "executiveSummary": {
+      "title": "Executive Summary",
+      "description": "Compact overview of my qualifications, experiences, and achievements.",
+      "button": "Download Executive Summary"
+    },
+    "projectOverview": {
+      "title": "Project Overview",
+      "description": "Overview of selected projects and achieved results.",
+      "button": "Download Project Overview"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Professional Articles and Insights",
+    "description": "Here you can find current professional articles and insights on procurement, supply chain management, and operations.",
+    "readMore": "Read More",
+    "categories": "Categories",
+    "recentPosts": "Recent Posts",
+    "search": "Search",
+    "noResults": "No results found."
+  },
+  "successStories": {
+    "title": "Success Stories",
+    "subtitle": "Reference Projects and Results",
+    "description": "Discover how I've helped companies achieve measurable results.",
+    "story1": {
+      "title": "15% Cost Reduction Through Strategic Procurement Optimization",
+      "description": "Comprehensive realignment of procurement for a medium-sized industrial company, leading to significant savings."
+    },
+    "story2": {
+      "title": "Supply Chain Transformation in the Automotive Industry",
+      "description": "Implementation of a digital supply chain solution that improved supply chain resilience and reduced supply bottlenecks by 40%."
+    },
+    "story3": {
+      "title": "Operational Excellence in Production",
+      "description": "By introducing lean management principles, production efficiency was increased by 25% and throughput times were halved."
+    },
+    "metrics": {
+      "savings": "Savings",
+      "volume": "Procurement Volume",
+      "duration": "Project Duration",
+      "team": "Team Size"
+    },
+    "testimonials": {
+      "title": "Testimonials",
+      "subtitle": "What clients say about working together"
+    }
+  },
+  "partners": {
+    "title": "Partners & Consultants",
+    "subtitle": "Our Network of Experts",
+    "description": "Meet our network of experienced partners and consultants who offer specialized expertise in various fields.",
+    "filter": {
+      "title": "Filter by Expertise",
+      "all": "All",
+      "procurement": "Procurement & Purchasing",
+      "supplyChain": "Supply Chain Management",
+      "operations": "Operations",
+      "sourcing": "Sourcing",
+      "interim": "Interim Management",
+      "other": "Other Areas"
+    },
+    "contact": "Get in Touch",
+    "expertise": "Areas of Expertise",
+    "languages": "Languages",
+    "noResults": "No partners found with the selected criteria."
+  },
+  "imprint": {
+    "title": "Legal Notice",
+    "subtitle": "Legal Information",
+    "companyInfo": {
+      "title": "Company Information",
+      "name": "DÖRING Consulting",
+      "owner": "Alexander Döring",
+      "address": "Address",
+      "contact": "Contact",
+      "email": "Email",
+      "phone": "Phone",
+      "taxId": "Tax ID",
+      "vatId": "VAT ID"
+    },
+    "disclaimer": {
+      "title": "Disclaimer",
+      "content": "Despite careful content control, we assume no liability for the content of external links. The operators of the linked pages are solely responsible for their content."
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "subtitle": "Data Protection Declaration",
+    "intro": "The protection of your personal data is important to us. In this privacy policy, we inform you about the collection, processing, and use of your data.",
+    "dataCollection": {
+      "title": "Data Collection",
+      "content": "We automatically collect and store information in log files that your browser transmits to us. This includes: browser type/version, operating system used, referrer URL, hostname of the accessing computer, time of server request."
+    },
+    "cookies": {
+      "title": "Cookies",
+      "content": "Our website uses cookies. Cookies are small text files that are stored on your computer and saved by your browser. They serve to make our offer more user-friendly, effective, and secure."
+    },
+    "rights": {
+      "title": "Your Rights",
+      "content": "You have the right to free information about your stored personal data, its origin and recipients, and the purpose of data processing, as well as a right to correction, blocking, or deletion of this data."
+    }
+  }
+}
