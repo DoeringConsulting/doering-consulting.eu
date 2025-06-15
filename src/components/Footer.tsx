@@ -53,7 +53,7 @@ const FooterTitle = styled.h3`
 
 const Footer: FC = () => {
   return (
-    <IconContext.Provider value={{ className: 'mr-2 inline text-inherit' }}>
+    <IconContext.Provider value={{ className: 'mr-2 inline text-white align-middle' }}>
       <FooterContainer>
         <FooterContent>
           <FooterColumn>
@@ -74,13 +74,12 @@ const Footer: FC = () => {
           </FooterColumn>
           <FooterColumn>
             <FooterTitle>Adresse</FooterTitle>
-            <p className="flex items-start">
+            <p>
               <FaMapMarkerAlt />
               <a
                 href="https://www.google.com/maps/search/?api=1&query=D%C3%96RING+Consulting,+ul.+Gen.+Leopolda+Okulickiego+4,+41-208+Sosnowiec,+Poland"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ color: 'inherit', textDecoration: 'none' }}
               >
                 DÖRING CONSULTING<br />
                 ul. Gen. Leopolda Okulickiego 4<br />
@@ -90,17 +89,13 @@ const Footer: FC = () => {
           </FooterColumn>
           <FooterColumn>
             <FooterTitle>Kontakt</FooterTitle>
-            <p className="flex items-center">
+            <p>
               <FaPhoneAlt />
-              <a href="tel:+48123456789" style={{ color: 'inherit', textDecoration: 'none' }}>
-                +48 123 456 789
-              </a>
+              <a href="tel:+48123456789">+48 123 456 789</a>
             </p>
-            <p className="flex items-center">
+            <p>
               <FaEnvelope />
-              <a href="mailto:kontakt@doering-consulting.eu" style={{ color: 'inherit', textDecoration: 'none' }}>
-                kontakt@doering-consulting.eu
-              </a>
+              <a href="mailto:kontakt@doering-consulting.eu">kontakt@doering-consulting.eu</a>
             </p>
           </FooterColumn>
         </FooterContent>
