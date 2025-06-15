@@ -3,6 +3,7 @@ import { FC } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+import { IconContext } from 'react-icons';
 
 const FooterContainer = styled.footer`
   background-color: ${(props) => props.theme.colors.secondary};
@@ -52,57 +53,59 @@ const FooterTitle = styled.h3`
 
 const Footer: FC = () => {
   return (
-    <FooterContainer>
-      <FooterContent>
-        <FooterColumn>
-          <FooterTitle>Unternehmen</FooterTitle>
-          <ul>
-            <li><Link to="/about">Über uns</Link></li>
-            <li><Link to="/services">Leistungen</Link></li>
-            <li><Link to="/downloads">Downloads</Link></li>
-            <li><Link to="/kontakt">Kontakt</Link></li>
-          </ul>
-        </FooterColumn>
-        <FooterColumn>
-          <FooterTitle>Rechtliches</FooterTitle>
-          <ul>
-            <li><Link to="/impressum">Impressum</Link></li>
-            <li><Link to="/datenschutz">Datenschutz</Link></li>
-          </ul>
-        </FooterColumn>
-        <FooterColumn>
-          <FooterTitle>Adresse</FooterTitle>
-          <p>
-            <FaMapMarkerAlt style={{ marginRight: '8px' }} />
-            <a
-              href="https://www.google.com/maps/search/?api=1&query=D%C3%96RING+Consulting,+ul.+Gen.+Leopolda+Okulickiego+4,+41-208+Sosnowiec,+Poland"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ color: 'inherit', textDecoration: 'none' }}
-            >
-              DÖRING CONSULTING<br />
-              ul. Gen. Leopolda Okulickiego 4<br />
-              41-208 Sosnowiec, POLAND
-            </a>
-          </p>
-        </FooterColumn>
-        <FooterColumn>
-          <FooterTitle>Kontakt</FooterTitle>
-          <p>
-            <FaPhoneAlt style={{ marginRight: '8px' }} />
-            <a href="tel:+48123456789" style={{ color: 'inherit', textDecoration: 'none' }}>
-              +48 123 456 789
-            </a>
-          </p>
-          <p>
-            <FaEnvelope style={{ marginRight: '8px' }} />
-            <a href="mailto:kontakt@doering-consulting.eu" style={{ color: 'inherit', textDecoration: 'none' }}>
-              kontakt@doering-consulting.eu
-            </a>
-          </p>
-        </FooterColumn>
-      </FooterContent>
-    </FooterContainer>
+    <IconContext.Provider value={{ className: 'mr-2 inline text-inherit' }}>
+      <FooterContainer>
+        <FooterContent>
+          <FooterColumn>
+            <FooterTitle>Unternehmen</FooterTitle>
+            <ul>
+              <li><Link to="/about">Über uns</Link></li>
+              <li><Link to="/services">Leistungen</Link></li>
+              <li><Link to="/downloads">Downloads</Link></li>
+              <li><Link to="/kontakt">Kontakt</Link></li>
+            </ul>
+          </FooterColumn>
+          <FooterColumn>
+            <FooterTitle>Rechtliches</FooterTitle>
+            <ul>
+              <li><Link to="/impressum">Impressum</Link></li>
+              <li><Link to="/datenschutz">Datenschutz</Link></li>
+            </ul>
+          </FooterColumn>
+          <FooterColumn>
+            <FooterTitle>Adresse</FooterTitle>
+            <p className="flex items-start">
+              <FaMapMarkerAlt />
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=D%C3%96RING+Consulting,+ul.+Gen.+Leopolda+Okulickiego+4,+41-208+Sosnowiec,+Poland"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: 'inherit', textDecoration: 'none' }}
+              >
+                DÖRING CONSULTING<br />
+                ul. Gen. Leopolda Okulickiego 4<br />
+                41-208 Sosnowiec, POLAND
+              </a>
+            </p>
+          </FooterColumn>
+          <FooterColumn>
+            <FooterTitle>Kontakt</FooterTitle>
+            <p className="flex items-center">
+              <FaPhoneAlt />
+              <a href="tel:+48123456789" style={{ color: 'inherit', textDecoration: 'none' }}>
+                +48 123 456 789
+              </a>
+            </p>
+            <p className="flex items-center">
+              <FaEnvelope />
+              <a href="mailto:kontakt@doering-consulting.eu" style={{ color: 'inherit', textDecoration: 'none' }}>
+                kontakt@doering-consulting.eu
+              </a>
+            </p>
+          </FooterColumn>
+        </FooterContent>
+      </FooterContainer>
+    </IconContext.Provider>
   );
 };
 
