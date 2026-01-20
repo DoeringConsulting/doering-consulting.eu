@@ -1,0 +1,49 @@
+{
+  "appId": "de.doering-consulting.billing",
+  "productName": "Döring Consulting Billing",
+  "directories": {
+    "output": "release",
+    "buildResources": "build-resources"
+  },
+  "files": [
+    "dist/**/*",
+    "dist-electron/**/*",
+    "package.json"
+  ],
+  "extraResources": [
+    {
+      "from": "build-resources",
+      "to": "resources"
+    }
+  ],
+  "win": {
+    "target": [
+      {
+        "target": "portable",
+        "arch": ["x64"]
+      }
+    ],
+    "icon": "build-resources/icon.ico",
+    "artifactName": "${productName}-${version}-portable.${ext}"
+  },
+  "portable": {
+    "artifactName": "${productName}-${version}-Portable.${ext}"
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true,
+    "createDesktopShortcut": true,
+    "createStartMenuShortcut": true,
+    "shortcutName": "Döring Consulting Billing"
+  },
+  "mac": {
+    "target": ["dmg", "zip"],
+    "icon": "build-resources/icon.icns",
+    "category": "public.app-category.business"
+  },
+  "linux": {
+    "target": ["AppImage"],
+    "icon": "build-resources/icon.png",
+    "category": "Office"
+  }
+}
